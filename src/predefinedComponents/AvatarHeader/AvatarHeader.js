@@ -94,12 +94,12 @@ class AvatarHeader extends React.Component {
     return (
       <View style={[styles.headerWrapper, styles.userModalHeader, { backgroundColor }]}>
         <View style={styles.headerMenu}>
-          <TouchableOpacity
+          {/* <TouchableOpacity
             hitSlop={sizes.hitSlop}
             onPress={leftTopIconOnPress}
             style={styles.leftHeaderButton}>
             <Image style={styles.icon} resizeMode="contain" source={leftTopIcon} />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
           <View style={styles.headerTitleContainer}>
             <Animated.Image source={image} style={[styles.headerPic, { opacity: imageOpacity }]} />
             <Animated.Text numberOfLines={1} style={[styles.headerTitle, { opacity: nameOpacity }]}>
